@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 int main() {
@@ -22,6 +23,7 @@ int main() {
         } 
     }
 
+    sort (number.begin(), number.end());
     for (int i = 0; i < number.size(); i++) {
         cout << number[i] << " ";
     }
